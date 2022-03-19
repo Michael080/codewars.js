@@ -1,4 +1,5 @@
 /* 
+https://www.codewars.com/kata/523f5d21c841566fde000009/javascript
 Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
 
 It should remove all values from list a, which are present in list b keeping their order.
@@ -10,9 +11,8 @@ arrayDiff([1,2,2,2,3],[2]) == [1,3]
 */
 
 function arrayDiff(a, b) {
-  const diff = [];
-
- return diff;
+ return a.filter(elem => !b.includes(elem));
 }
 
-// codewars =>
+// codewars => Time: 739ms | Passed: 41 | Failed: 0
+// time (approx: 10mins)
